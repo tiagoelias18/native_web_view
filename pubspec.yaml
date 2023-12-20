@@ -20,9 +20,9 @@ flutter:
 
   plugin:
     platforms:
-      ios:
-        pluginClass: WebViewPlugin
       android:
-        package: com.codingwithtashi.web_view
+        package: com.skore.web_view
+        pluginClass: WebViewPlugin
+      ios:
         pluginClass: WebViewPlugin
         

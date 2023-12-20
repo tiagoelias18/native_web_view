@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:native_web_view/controller/ios_native_web_view_controller.dart';
-import 'package:native_web_view/ui/loading_web_view.dart';
+import 'package:web_view/controller/ios_native_web_view_controller.dart';
+import 'package:web_view/ui/loading_web_view.dart';
 
 class IosNativeWebView extends StatefulWidget {
   final String initialUrl;

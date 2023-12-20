@@ -1,4 +1,4 @@
-name: native_web_view
+name: web_view
 description: Flutter project to use webview natively.
 
 version: 0.0.1

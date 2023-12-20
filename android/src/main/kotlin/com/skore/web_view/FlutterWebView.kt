@@ -1,4 +1,4 @@
-package com.native.web_view
+package com.skore.web_view
 
 import android.content.Context
 import android.view.View
@@ -24,9 +24,12 @@ class FlutterWebView internal constructor(
     }
 
     init {
+        // Init WebView
         webView = WebView(context)
+        // Set client so that you can interact within WebView
         webView.webViewClient = WebViewClient()
         methodChannel = MethodChannel(messenger, "web_view_$id")
+        // Init methodCall Listener
         methodChannel.setMethodCallHandler(this)
     }
 
@@ -37,12 +40,14 @@ class FlutterWebView internal constructor(
         }
     }
 
+    // set and load new Url
     private fun setText(methodCall: MethodCall, result: MethodChannel.Result ) {
         val url = methodCall.arguments as String
         webView.loadUrl(url)
         result.success(null)
     }
 
+    // Destroy WebView when PlatformView is destroyed
     override fun dispose() {
         webView.destroy()
     }

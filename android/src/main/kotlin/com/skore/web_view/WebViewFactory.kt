@@ -1,4 +1,4 @@
-package com.native.web_view
+package com.skore.web_view
 
 import android.content.Context
 import io.flutter.plugin.common.BinaryMessenger

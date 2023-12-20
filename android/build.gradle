@@ -1,4 +1,4 @@
-group 'com.native.web_view'
+group 'com.skore.web_view'
 version '1.0-SNAPSHOT'
 
 buildscript {

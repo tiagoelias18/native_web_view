@@ -23,6 +23,6 @@ flutter:
       ios:
         pluginClass: WebViewPlugin
       android:
-        package: com.native.web_view
+        package: com.codingwithtashi.web_view
         pluginClass: WebViewPlugin
         

@@ -1,4 +1,4 @@
-package com.skore.web_view
+package com.codingwithtashi.web_view
 
 import android.content.Context
 import android.view.View
@@ -28,7 +28,7 @@ class FlutterWebView internal constructor(
         webView = WebView(context)
         // Set client so that you can interact within WebView
         webView.webViewClient = WebViewClient()
-        methodChannel = MethodChannel(messenger, "web_view_$id")
+        methodChannel = MethodChannel(messenger, "plugins.codingwithtashi/flutter_web_view_$id")
         // Init methodCall Listener
         methodChannel.setMethodCallHandler(this)
     }

@@ -1,4 +1,4 @@
-package com.skore.web_view
+package com.codingwithtashi.web_view
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 
@@ -6,7 +6,7 @@ class WebViewPlugin :FlutterPlugin {
 
   override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
     binding.platformViewRegistry.registerViewFactory(
-      "web_view", WebViewFactory(binding.binaryMessenger))
+      "plugins.codingwithtashi/flutter_web_view", WebViewFactory(binding.binaryMessenger))
   }
 
   /*

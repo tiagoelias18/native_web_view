@@ -1,4 +1,4 @@
-group 'com.skore.web_view'
+group 'com.codingwithtashi.web_view'
 version '1.0-SNAPSHOT'
 
 buildscript {

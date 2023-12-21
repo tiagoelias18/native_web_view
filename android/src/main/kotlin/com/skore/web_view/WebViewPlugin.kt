@@ -10,6 +10,5 @@ class WebViewPlugin :FlutterPlugin {
   }
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-    TODO("Not yet implemented")
   }
 }
